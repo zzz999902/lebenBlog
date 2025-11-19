@@ -39,12 +39,7 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        docs: false,
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -80,12 +75,12 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: '文章',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: '文章',
+        // },
         { to: '/blog', label: '日常', position: 'left' },
         // {
         //   href: 'https://github.com/facebook/docusaurus',
