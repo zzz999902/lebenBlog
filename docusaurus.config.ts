@@ -76,6 +76,7 @@ const config: Config = {
     },
     navbar: {
       title: 'Lben',
+       hideOnScroll: true,
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
