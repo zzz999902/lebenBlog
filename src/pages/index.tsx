@@ -65,8 +65,7 @@ export default function Home(): ReactNode {
               />
             </div>
             <p className={styles.intro}>
-              前端工程师，这里记录灵感、
-              实验与生活片段。
+              这里记录日常的感悟、生活片段、好的习惯、值得学习的东西。
             </p>
             <div className={styles.actions}>
               <Link className="button button--primary button--lg" to="/blog">
