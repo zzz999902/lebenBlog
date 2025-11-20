@@ -8,34 +8,34 @@ import styles from './index.module.css';
 
 const EXPERIENCES = [
   {
-    company: '自由职业',
+    company: 'Freelancer',
     role: 'Front-end Engineer',
     period: '2025.07 - 至今',
     location: 'Shenyang · China',
-    summary: '自由职业',
+    summary: 'Freelancer',
     stack: [],
   },
   {
-    company: '北京TATA木门',
+    company: 'Beijing TATA Wooden Doors',
     role: 'Front-end Engineer',
     period: '2022.07 - 2025.07',
     location: 'Beijing · China',
-    summary: '参与内部平台迭代，打造统一的开发者门户体验。',
+    summary: 'Participate in the internal platform iteration and create a unified developer portal experience.',
     stack: ['React', 'TypeScript'],
   },
   {
-    company: '沈阳智能大数据科技有限公司',
+    company: 'Shenyang Intelligent Big Data Technology Co., LTD',
     role: 'Front-end Engineer',
     period: '2021.07 - 2022.02',
     location: 'Shenyang · China',
-    summary: '负责数据可视化后台的前端开发，主导 React/Vue 组件库落地。',
+    summary: 'Responsible for the front-end development of the data visualization backend and leading the implementation of the React/Vue component library.',
     stack: ['React', 'Vue', 'JavaScript'],
   },
 ];
 
 const PROJECTS = [
   {
-    company: '暂时没有部署的项目',
+    company: 'There are no deployed projects for the time being',
     role: '',
     period: '2021-2026',
     location: '',
@@ -59,8 +59,8 @@ export default function Home(): ReactNode {
             <p className={styles.tagline}>{siteConfig.tagline}</p>
             <div className={styles.avatarWrapper}>
               <img
-                src="/img/docusaurus.png"
-                alt="肇旭阳头像"
+                src="/img/liutian.png"
+                alt="头像"
                 className={styles.avatar}
               />
             </div>
