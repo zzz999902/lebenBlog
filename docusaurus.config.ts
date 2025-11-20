@@ -39,7 +39,9 @@ const config: Config = {
     [
       'classic',
       {
-        docs: false,
+        docs: {
+          sidebarPath: './sidebars.ts',
+        },
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -75,18 +77,22 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: '文章',
-        // },
-        { to: '/blog', label: '日常', position: 'left' },
-        // {
-        //   href: 'https://github.com/facebook/docusaurus',
-        //   label: 'GitHub',
-        //   position: 'left',
-        // },
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'right',
+          label: '正文',
+        },
+        {
+          to: '/blog',
+          label: '日常',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/zzz999902/lebenBlog',
+          label: 'GitHub',
+          position: 'right',
+        },
       ],
     },
     // footer: {
@@ -138,16 +144,15 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
-    algolia: {
-      // Algolia 提供的应用 ID
-      appId: 'YOUR_APP_ID',
-      // 下面是搜索功能的补全
-      // https://xxx.zhangyuqi.top/docs/MyWebsite/AddFunctions/AddAlgoliaDocSearch
-      //  公开 API 密钥：提交它没有危险
-      apiKey: 'YOUR_SEARCH_API_KEY',
-
-      indexName: 'YOUR_INDEX_NAME',
-    },
+    // algolia: {
+    //   // Algolia 提供的应用 ID
+    //   appId: 'YOUR_APP_ID',
+    //   // 下面是搜索功能的补全
+    //   // https://xxx.zhangyuqi.top/docs/MyWebsite/AddFunctions/AddAlgoliaDocSearch
+    //   //  公开 API 密钥：提交它没有危险
+    //   apiKey: 'YOUR_SEARCH_API_KEY',
+    //   indexName: 'YOUR_INDEX_NAME',
+    // },
   } satisfies Preset.ThemeConfig,
 };
 

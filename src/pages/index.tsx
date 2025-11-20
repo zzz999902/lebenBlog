@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-
+import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import styles from './index.module.css';
 
 const EXPERIENCES = [
@@ -68,10 +68,13 @@ export default function Home(): ReactNode {
               这里记录日常的感悟、生活片段、好的习惯、值得学习的东西。
             </p>
             <div className={styles.actions}>
-              <Link className="button button--primary button--lg" to="/blog">
+              <Link className={styles.customButton} to="/blog">
                 查看我的日常
               </Link>
             </div>
+          </div>
+          <div className={styles.featuresWrapper}>
+            <HomepageFeatures />
           </div>
         </section>
 
